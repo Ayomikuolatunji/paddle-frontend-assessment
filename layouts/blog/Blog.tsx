@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from './Hero'
 
 export default function Blog() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+   <>
+       <Hero/>
+   </>
   )
 }
