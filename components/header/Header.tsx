@@ -10,7 +10,7 @@ export const Header:React.FC = () => {
         {item:"Contact Us", path:"contact"}
     ]
   return (
-    <div className='flex justify-between items-center w-full px-5 py-6 mx-auto bg-[#FAFAFA] sm:w-10/12 sm:px-0 sm:py-10 fixed z-50 top-0 left-0 right-0'>
+    <div className='flex justify-between items-center w-full px-5 py-6 mx-auto bg-[#FAFAFA] sm:w-10/12 sm:px-0 sm:py-10'>
         <div className="logo font-bold text-[20px]">
              <Link href={"/"}>
                  METRICKS
