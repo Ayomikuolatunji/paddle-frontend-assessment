@@ -24,16 +24,16 @@ const RecentArticle = () => {
                           {article.post}
                       </p>
                       <div className="readmore flex mt-3 items-center">
-                          <span className='bg-[#FF00F7] h-[2px] w-[87px] block mt-2'></span>
+                          <span className='bg-[#FF00F7] h-[2px] w-[87px] block'></span>
                           {/* link will replace it the p tag in a real life scenario */}
-                          <p className='text-[#FF00F7] ml-3'>READ MORE</p>
+                          <p className='text-[#FF00F7] ml-3 cursor-pointer'>READ MORE</p>
                       </div>
                       </div>
                   })
               }
          </div>
-         <div className="btn my-6 text-center">
-            <button className='bg-[#7C0FD5] shadow-post-btn-shadow opacity-[1] text-[#fff] px-10 py-8 uppercase rounded-[50px]'>
+         <div className="btn my-10 text-center">
+            <button className='bg-[#7C0FD5] shadow-post-btn-shadow opacity-[1] text-[#fff] px-12 py-4 uppercase rounded-[50px] text-[21px]'>
                 load more
             </button>
          </div>
