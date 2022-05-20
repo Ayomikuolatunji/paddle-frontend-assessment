@@ -2,7 +2,7 @@ import React from 'react'
 import { Header } from '../../components/header/Header'
 
 interface Props  {
-    children?: JSX.Element,
+    children?: JSX.Element | JSX.Element[];
 };
 const HeaderWrapper = ({children }: Props) => {
   return (
