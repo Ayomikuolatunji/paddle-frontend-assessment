@@ -1,4 +1,5 @@
 import React from 'react'
+import BlogPost from './BlogPost'
 import Hero from './Hero'
 import Search from './Search'
 
@@ -7,6 +8,7 @@ export default function Blog() {
    <div className='sm:w-10/12 mx-auto w-full sm:px-0 px-3'>
        <Hero/>
        <Search/>
+       <BlogPost/>
    </div>
   )
 }
