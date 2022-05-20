@@ -1,7 +1,11 @@
-import { NextPage } from 'next'
-import React from 'react'
+import type { NextPage } from 'next'
 import Blog from '../../layouts/blog/Blog'
 
-export const index:NextPage = () => {
+
+
+
+const index: NextPage = () => {
   return <Blog/>
 }
+
+export default index
