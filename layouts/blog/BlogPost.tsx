@@ -28,8 +28,8 @@ const BlogPost:React.FC=()=>{
                       <p className="py-3 text-[#1E232C] text-[18px] font-[300]">
                           {blog.post}
                       </p>
-                      <div className="readmore flex mt-3">
-                          <span className='bg-[#FF00F7] h-[2px] w-[87px] block mt-2'></span>
+                      <div className="readmore flex mt-3 items-center">
+                          <span className='bg-[#FF00F7] h-[2px] w-[87px] block'></span>
                           {/* link will replace it the p tag in a real life scenario */}
                           <p className='text-[#FF00F7] ml-3'>READ MORE</p>
                       </div>

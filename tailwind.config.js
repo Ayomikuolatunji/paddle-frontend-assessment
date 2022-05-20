@@ -12,7 +12,8 @@ module.exports = {
       boxShadow: {
         'contact-shadow': '0px 0px 10px #09090908',
         "blog-post-shadow": "0px 0px 30px #00000038",
-        "blog-post-image-shadow":"0px 0px 15px #00000029"
+        "blog-post-image-shadow":"0px 0px 15px #00000029",
+        "post-btn-shadow":"0px 0px 10px #09090933"
       }
     }
   },
