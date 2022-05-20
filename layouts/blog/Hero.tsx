@@ -2,7 +2,9 @@ import React from 'react'
 
 const Hero:React.FC=()=>{
   return (
-    <div>Hero</div>
+    <div className='mt-[190px]'>
+
+    </div>
   )
 }
 

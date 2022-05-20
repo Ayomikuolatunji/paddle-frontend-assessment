@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogPost from './BlogPost'
 import Hero from './Hero'
+import RecentArticle from './RecentArticle'
 import Search from './Search'
 
 export default function Blog() {
@@ -9,6 +10,7 @@ export default function Blog() {
        <Hero/>
        <Search/>
        <BlogPost/>
+       <RecentArticle/>
    </div>
   )
 }
