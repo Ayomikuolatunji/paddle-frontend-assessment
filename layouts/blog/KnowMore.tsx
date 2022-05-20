@@ -20,10 +20,11 @@ const KnowMore:React.FC= () => {
                 </div>
            </div>
         </div>
-        <div className="sm:flex justify-center flex-col h-[inherent] items-center hidden">
+        <div className="sm:flex justify-center flex-col h-[inherent] items-center hidden relative ml-10">
             {/* right dim box dim  */}
-        <div className='bg-yellow-700 h-[100px] w-[230px] rounded-md shadow-xl opacity-[0.5] block'></div>
-            
+            <div className='bg-yellow-500 h-[100px] w-[230px] rounded-md shadow-2xl opacity-[0.5] block ml-12'></div>
+            <div className='bg-[#19073B] h-[318px] w-[557px] backdrop-blur-[16px] rounded-md shadow-xl opacity-[0.5] block absolute'>
+            </div>
         </div>
     </div>
   )
