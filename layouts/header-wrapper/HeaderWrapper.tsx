@@ -14,4 +14,4 @@ const HeaderWrapper = ({children }: Props) => {
     </div>
   )
 }
-export default HeaderWrapper
+export default HeaderWrapper 
