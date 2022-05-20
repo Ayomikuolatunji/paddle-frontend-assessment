@@ -32,9 +32,11 @@ const RecentArticle = () => {
                   })
               }
          </div>
-         <button className='bg-[#7C0FD5]'>
-             load more
-         </button>
+         <div className="btn my-6 text-center">
+            <button className='bg-[#7C0FD5] shadow-post-btn-shadow opacity-[1] text-[#fff] px-10 py-8 uppercase rounded-[50px]'>
+                load more
+            </button>
+         </div>
     </div>
   )
 }
