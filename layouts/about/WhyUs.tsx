@@ -4,23 +4,20 @@ const WhyUs:React.FC = () => {
 
 
 
-
-    // useEffect(()=>{
-
-    //     var container = document.querySelector(".dot-group")! as HTMLDivElement;
-
-    //   function Values() {
-    //     for (let i = 0; i <Array.from(Array(81).keys()).length; i++) {
-    //         const createElement=document.createElement("div")! as HTMLDivElement
-    //       //   will be style in styles.css
-    //         createElement.className="dot-child"
-    //         container.appendChild(createElement)
-    //       }
-    //   }
-
-
-    //   Values()
-    // },[])
+    
+    useEffect(()=>{
+     let container = document.querySelector(".dot-group")! as HTMLDivElement;
+      function Values() {
+        Array.from(Array(81).keys()).map((_, i)=>{
+            console.log(i);
+            const createElement=document.createElement("div")! as HTMLDivElement
+            //   will be style in styles.css
+              createElement.className="dot-child"
+              container.appendChild(createElement)
+           })
+      }
+      Values()
+    },[])
 
 
   return (
@@ -55,10 +52,10 @@ const WhyUs:React.FC = () => {
                         <div className='bg-blue-200 h-[330px] w-[260px] rounded-md shadow-2xl sm:opacity-[1] z-20  absolute top-[20%] sm:right-[12%]'>
                         </div>
                     </div>               
-                    <div className="bg-red-500 bottom-0 absolute top-0 left-0 right-0 flex justify-start h-[395px] flex-col p-3">
-                          <div className="readmore flex items-center relative mt-12">
+                    <div className="bg-gradient-to-b from-[#213F72] to-[#1D0040]  bottom-0 absolute top-0 left-0 right-0 flex justify-start sm:h-[395px] h-[500px] flex-col p-3">
+                           <div className="readmore flex items-center relative mt-12">
                                 <span className="text absolute top-0 left-0 -mt-5 opacity-[1] sm:-mt-9 text-[#ffffff] text-[18px] font-medium sm:text-[35px]">
-                                    01
+                                    02
                                 </span>
                                 <span className='bg-[#FFFFFF] h-[2px] w-[87px] block'></span>
                                 <p className='text-[#FFFFFF] ml-3 cursor-pointer text-xl uppercase text-medium'>Why us
