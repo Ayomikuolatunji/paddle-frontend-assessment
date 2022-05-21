@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
-import Blog from '../../layouts/blog/Blog'
+import About from '../../layouts/about/About'
+
 
 
 
 
 const index: NextPage = () => {
-  return <Blog/>
+  return <About/>
 }
 
 export default index
