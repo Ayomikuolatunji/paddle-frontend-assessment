@@ -5,18 +5,22 @@ const WhyUs:React.FC = () => {
 
 
 
-    useEffect(()=>{
-        const template='<div class="box"></div>'
-        const array=[1,2,3,4,5]
-        var container = document.querySelector(".dot-group")!as HTMLDivElement;
+    // useEffect(()=>{
 
-        for (let i = 0; i <array.length; i++) {
-          const createElement=document.createElement("div")!as HTMLDivElement
-        //   will be style in styles/global.module.css
-          createElement.className="dot-child"
-          container.appendChild(createElement)
-        }
-    },[])
+    //     var container = document.querySelector(".dot-group")! as HTMLDivElement;
+
+    //   function Values() {
+    //     for (let i = 0; i <Array.from(Array(81).keys()).length; i++) {
+    //         const createElement=document.createElement("div")! as HTMLDivElement
+    //       //   will be style in styles.css
+    //         createElement.className="dot-child"
+    //         container.appendChild(createElement)
+    //       }
+    //   }
+
+
+    //   Values()
+    // },[])
 
 
   return (
@@ -42,16 +46,23 @@ const WhyUs:React.FC = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="dot-group container">
-
+                    <div className="dot-group mt-32 flex gap-2 w-[234px] my-10 flex-wrap">
+                         
                     </div>
                 </div>
             </div>
 
-
-        <div className="second-grid">
-
-        </div>
+            <div className="second-grid relative w-full">
+                <div className="lefts w-[50%] h-[inherent] flex items-center justify-center relative">
+                
+                    <div className='bg-pink-400 h-[330px] w-[260px] rounded-md shadow-2xl sm:opacity-[1] z-20 opacity-0 '>
+                    </div>
+            
+                    <div className="bg-gradient-to-r from-[#213F72] z-10 to-[#19073B]  w-full h-[inherent]  backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
+                    </div>
+        
+                </div>
+            </div>
     </div>
   )
 }
