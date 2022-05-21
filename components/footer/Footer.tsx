@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import React from 'react'
-import { IconManifest, icons } from 'react-icons'
 import {AiFillYoutube,AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from "react-icons/ai"
 
 
@@ -44,13 +43,16 @@ const Footer:React.FC = () => {
           })}
         </div>
       
-        <div className="term-service mb-6 text-[#ffffff]">
+        <div 
+        className={`term-service mb-6 ${router.asPath==="/about" ? " text-[#000000]" : router.asPath==="/blog" ? "text-[#ffffff]" :"text-[#000000]"}`}>
             <span className='mr-4'>Terms of services</span>
             <span className=''>Privacy policy</span>
         </div>
         
         <div className="copyright mb-5">
-        Copyright {recentYear} @ Peddle Technologies. All Rights Reserved.
+          <p  className={`term-service mb-6 ${router.asPath==="/about" ? " text-[#000000]" : router.asPath==="/blog" ? "text-[#ffffff]" :"text-[#000000]"}`}>
+          Copyright {recentYear} @ Peddle Technologies. All Rights Reserved.
+          </p>
         </div>
     </div>
   )
