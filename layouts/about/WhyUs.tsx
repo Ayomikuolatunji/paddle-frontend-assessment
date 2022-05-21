@@ -5,8 +5,18 @@ const WhyUs:React.FC = () => {
 
 
 
-    useEffect(()=>
-    )
+    useEffect(()=>{
+        const template='<div class="box"></div>'
+        const array=[1,2,3,4,5]
+        var container = document.querySelector("dot-group")!as HTMLDivElement;
+        console.log(container);
+        for (let i = 0; i <array.length; i++) {
+          const createElement=document.createElement("div")!as HTMLDivElement
+        //   container.appendChild(createElement)
+        }
+    },[])
+
+
   return (
     <div className='sm:w-10/12 mx-auto w-full mt-28 sm:px-0 px-3 h-[627px]'>
         <div className="main-wrapper grid sm:grid-cols-2 grid-cols-1">

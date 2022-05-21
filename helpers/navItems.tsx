@@ -1,7 +1,7 @@
 const navItems=[
     {item:"About us",path:"/about"},
     {item:"Blog",path:"/blog"},
-    {item:"Contact Us", path:"contact"}
+    {item:"Contact Us", path:"/contact"}
 ]
 
 
