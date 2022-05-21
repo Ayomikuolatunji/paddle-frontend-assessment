@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../../components/footer/Footer'
 import BlogPost from './BlogPost'
 import Hero from './Hero.Blog'
-import KnowMore from './KnowMore'
+import KnowMore from '../../components/know-more/KnowMore'
 import RecentArticle from './RecentArticle'
 import Search from './Search'
 

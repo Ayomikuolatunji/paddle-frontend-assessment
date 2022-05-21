@@ -1,4 +1,6 @@
 import React from 'react'
+import Footer from '../../components/footer/Footer'
+import KnowMore from '../../components/know-more/KnowMore'
 import Hero from './Hero.About'
 import MetricText from './MetricText'
 import WhyUs from './WhyUs'
@@ -11,9 +13,10 @@ const About:React.FC = () => {
         <Hero/>
         <MetricText/>
         <WhyUs/>
-        <div className='w-full h-[400px]'>
-
-        </div>
+          
+          <div className="mt-80 sm:mt-0"></div>
+        <KnowMore/>
+        <Footer/>
     </div>
   )
 }

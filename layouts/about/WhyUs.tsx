@@ -50,11 +50,11 @@ const WhyUs:React.FC = () => {
                 {/* second grid on the right side */}
                 <div className="second-grid relative w-full">
                     <div className="lefts sm:w-[50%] w-full h-[inherent] flex items-center justify-center relative z-10">
-                        <div className='bg-blue-200 h-[330px] w-[260px] rounded-md shadow-2xl opacity-[1] z-[999] absolute top-[30%] mt-24 sm:mt-12 sm:right-[0] backdrop-blur-m backdrop-filter-none  backdrop-brightness-150 ]'>
+                        <div className='bg-blue-200 h-[280px] w-[250px] rounded-md shadow-2xl opacity-[1] z-[999] absolute top-[30%] mt-24 sm:mt-12 sm:right-[0] backdrop-blur-m backdrop-filter-none  backdrop-brightness-150 ]'>
                         </div>
                     </div>               
                     <div className="bg-gradient-to-b from-[#213F72] to-[#1D0040]  bottom-0 absolute top-0 left-0 right-0 flex justify-start sm:h-[395px] h-[500px] flex-col p-3">
-                           <div className="readmore flex items-center relative mt-12 z-[999]">
+                           <div className="readmore flex items-center relative mt-9 z-[999]">
                                 <span className="text absolute top-0 left-0 -mt-5 opacity-[1] sm:-mt-7 text-[#ffffff] text-[18px] font-medium sm:text-[25px]">
                                     02
                                 </span>

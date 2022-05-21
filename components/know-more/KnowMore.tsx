@@ -1,13 +1,18 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 import {BsArrowRightShort} from "react-icons/bs"
 import CustomButton from '../../util/CustomButton'
 
 
+// it is a reusable components and it is used in both /blog and /about us page
+
+
 const KnowMore:React.FC= () => {
+   const router=useRouter()
 
   return (
-    <div className='bg-gradient-to-b from-[#213F72] grid sm:grid-cols-2 grid-cols-1 to-[#19073B] h-[463px] mb-20 w-full
-    sm:px-0 px-2'>
+    <div className={`grid sm:grid-cols-2 grid-cols-1  h-[463px] mb-20 w-full
+    sm:px-0 px-2 ${router.asPath==="/about"? "bg-gradient-to-r from-[#213F72] to-[#213F72] " :"bg-gradient-to-b from-[#213F72]to-[#19073B]"}`}>
         <div className="content flex justify-center flex-col h-[inherent] items-center">
            <div className='text-left'>
                 <h1 className="text-[#FFFFFF] text-[44px] capitalize opacity-[1] font-medium font-[poppins] tracking-normal">what to know more about Metrics ?

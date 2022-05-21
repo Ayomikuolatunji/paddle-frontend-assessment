@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 import {AiFillYoutube,AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from "react-icons/ai"
 
@@ -7,7 +8,18 @@ import {AiFillYoutube,AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitte
 
 const Footer:React.FC = () => {
    const recentYear=new Date().getFullYear()
+   const router=useRouter()
 
+  function iconFunc(){
+    return  [
+      {icon: <AiFillYoutube className='text-4xl ml-3'/>},
+      {icon:  <AiFillFacebook className="text-4xl ml-3"/>},
+      {icon: <AiFillLinkedin className='text-4xl ml-3'/>},
+      {icon: <AiFillInstagram className='text-4xl ml-3'/>},
+      {icon:  <AiFillTwitterSquare className='text-4xl ml-3'/>}
+    ]
+ 
+  }
   return (
     <div className='mt-24 w-full h-[200px] flex justify-center items-center flex-col'>
         <div className="social-icons flex my-5 mr-4">
