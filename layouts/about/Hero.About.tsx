@@ -9,7 +9,7 @@ const Hero = () => {
        <div className='bg-pink-400 h-[330px] w-[260px] rounded-md shadow-2xl sm:opacity-[1] z-20 opacity-0 absolute top-[20%] right-[12%]'>
        </div>
 
-       <div className="bg-gradient-to-r from-[#213F72] z-10 to-[#19073B]  w-full h-[inherent] absolute top-0 left-0 right-0 bottom-0 backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
+       <div className="bg-gradient-to-r from-[#213F72] z-10 to-[#19073B]  w-full h-[inherent] absolute top-0 left-0 right-0 bottom-0 backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-16">
        </div>
 
      </div>
