@@ -7,7 +7,7 @@ const Contact:React.FC = () => {
         <div className="left">
 
         </div>
-        <div className="right w-full">
+        <div className="right w-full h-[inherent]">
             <Form/>
         </div>
     </div>
