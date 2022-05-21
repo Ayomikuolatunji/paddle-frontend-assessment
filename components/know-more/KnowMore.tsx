@@ -12,7 +12,10 @@ const KnowMore:React.FC= () => {
 
   return (
     <div className={`grid sm:grid-cols-2 grid-cols-1  h-[463px] mb-20 w-full
-    sm:px-0 px-2 ${router.asPath==="/about"? "bg-gradient-to-r from-[#213F72] to-[#213F72] " :"bg-gradient-to-b from-[#213F72]to-[#19073B]"}`}>
+    sm:px-0 px-2
+     ${router.asPath==="/about"? "bg-gradient-to-r from-[#213F72] to-[#213F72] " : 
+     router.asPath==="/blog" ?"bg-gradient-to-b from-[#213F72] to-[#19073B]"
+     :" bg-gradient-to-b from-[#213F72]to-[#19073B] "}`}>
         <div className="content flex justify-center flex-col h-[inherent] items-center">
            <div className='text-left'>
                 <h1 className="text-[#FFFFFF] text-[44px] capitalize opacity-[1] font-medium font-[poppins] tracking-normal">what to know more about Metrics ?
