@@ -5,17 +5,19 @@ interface prop{
   placeholder:string
   className:string
   value:string
-  onChnage:(e: string)=>void
+  name:string
+  onChange:(e:React.FormEvent<HTMLInputElement>)=>void
 }
 
 
 function TextInput(prop:prop) {
   return (
     <Input 
+      name={prop.name}
       placeholder={prop.placeholder} 
       className={prop.className}
       value={prop.value}
-      onChange={(e)=>prop.onChnage(e.target.value)}
+      onChange={(e)=>prop.onChange(e)}
     />
   )
 }
