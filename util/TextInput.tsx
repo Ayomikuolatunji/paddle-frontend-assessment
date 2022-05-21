@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FormEvent } from 'react'
 import { Input } from 'antd';
 
 interface prop{
@@ -6,7 +6,7 @@ interface prop{
   className:string
   value:string
   name:string
-  onChange:(e:React.FormEvent<HTMLInputElement>)=>void
+  onChange:(e:FormEvent<HTMLInputElement>)=>void
 }
 
 

@@ -1,12 +1,13 @@
 import React from 'react'
 import FormLogic from '../../../helpers/formLogic'
+import InputBox from '../../../util/InputBox'
 import TextInput from '../../../util/TextInput'
 
 const Form:React.FC = () => {
     const {values,handleChange}=FormLogic()
   
 
-      console.log(values.firstname);
+   
 
 
   return (
@@ -25,13 +26,27 @@ const Form:React.FC = () => {
                  />
              </div>
              <div className="form-input">
-                 {/* <TextInput /> */}
+             <TextInput 
+                   name={"firstname"}
+                   placeholder='Enter your First name'
+                   className=''
+                   value={values.firstname}
+                   onChange={handleChange}
+                 />
              </div>
              <div className="form-input">
-                 {/* <TextInput /> */}
+             <TextInput 
+                   name={"firstname"}
+                   placeholder='Enter your First name'
+                   className=''
+                   value={values.firstname}
+                   onChange={handleChange}
+                 />
              </div>
              <div className="text-area">
-
+                <InputBox
+                
+                />
              </div>
         </form>
     </div>
