@@ -5,11 +5,15 @@ import Loader from '../../util/Loader'
 import GithubProfile from './GithubProfile'
 
 
-interface IUserData {
-    items:[]
-    total_count:number | string
-    incomplete_results:boolean
-}[]
+export interface IUserData {
+    id: number; // ID should not be part of the data
+    name: string;
+  }
+  interface fetch {
+      items:[]
+      total_count:number | string
+      incomplete_results:boolean
+  }[]
 const GitHubPage = () => {
     const [pageNum,setPageNum]=useState(1)
      const dispatch=useAppDispatch()
