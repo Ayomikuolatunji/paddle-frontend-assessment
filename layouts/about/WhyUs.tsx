@@ -55,8 +55,8 @@ const WhyUs:React.FC = () => {
                         <div className='bg-blue-200 h-[330px] w-[260px] rounded-md shadow-2xl sm:opacity-[1] z-20  absolute top-[20%] sm:right-[12%]'>
                         </div>
                     </div>               
-                    <div className="bg-red-500 bottom-0 absolute top-0 left-0 right-0 flex justify-start flex-col">
-                          <div className="readmore flex items-center relative">
+                    <div className="bg-red-500 bottom-0 absolute top-0 left-0 right-0 flex justify-start h-[395px] flex-col p-3">
+                          <div className="readmore flex items-center relative mt-12">
                                 <span className="text absolute top-0 left-0 -mt-5 opacity-[1] sm:-mt-9 text-[#ffffff] text-[18px] font-medium sm:text-[35px]">
                                     01
                                 </span>

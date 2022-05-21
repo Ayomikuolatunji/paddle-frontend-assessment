@@ -11,6 +11,9 @@ const About:React.FC = () => {
         <Hero/>
         <MetricText/>
         <WhyUs/>
+        <div className='w-full h-[400px]'>
+
+        </div>
     </div>
   )
 }
