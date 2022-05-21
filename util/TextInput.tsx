@@ -4,6 +4,8 @@ import { Input } from 'antd';
 interface prop{
   placeholder:string
   className:string
+  value:string
+  onChnage:(e: string)=>void
 }
 
 
@@ -12,6 +14,8 @@ function TextInput(prop:prop) {
     <Input 
       placeholder={prop.placeholder} 
       className={prop.className}
+      value={prop.value}
+      onChange={(e)=>prop.onChnage(e.target.value)}
     />
   )
 }

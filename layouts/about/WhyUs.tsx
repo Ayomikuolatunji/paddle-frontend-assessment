@@ -43,7 +43,7 @@ const WhyUs:React.FC = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="dot-group mt-32 flex gap-2 w-[234px] my-10 flex-wrap">
+                    <div className="dot-group mt-28 hidden sm:flex gap-2 w-[234px] my-10 flex-wrap">
                          
                     </div>
                 </div>
