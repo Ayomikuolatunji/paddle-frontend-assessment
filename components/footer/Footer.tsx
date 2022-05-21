@@ -13,11 +13,26 @@ const Footer:React.FC = () => {
 
 
      const icons= [
-      {icon: <AiFillYoutube className='text-4xl ml-3'/>},
-      {icon:  <AiFillFacebook className="text-4xl ml-3"/>},
-      {icon: <AiFillLinkedin className='text-4xl ml-3'/>},
-      {icon: <AiFillInstagram className='text-4xl ml-3'/>},
-      {icon:  <AiFillTwitterSquare className='text-4xl ml-3'/>}
+      {icon: <AiFillYoutube className={`text-4xl ml-3 ${
+        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+      }`}/>},
+      {icon:  <AiFillFacebook
+        className={`text-4xl ml-4 ${
+          router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+        }`}
+      />},
+      {icon: <AiFillLinkedin 
+        className={`text-4xl ml-3 ${
+        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+      }`}/>},
+      {icon: <AiFillInstagram 
+        className={`text-4xl ml-3 ${
+        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+      }`}/>},
+      {icon:  <AiFillTwitterSquare 
+        className={`text-4xl ml-3 ${
+        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+      }`}/>}
     ]
  
   
@@ -29,10 +44,11 @@ const Footer:React.FC = () => {
           })}
         </div>
       
-        <div className="term-service mb-6">
+        <div className="term-service mb-6 text-[#ffffff]">
             <span className='mr-4'>Terms of services</span>
             <span className=''>Privacy policy</span>
         </div>
+        
         <div className="copyright mb-5">
         Copyright {recentYear} @ Peddle Technologies. All Rights Reserved.
         </div>
