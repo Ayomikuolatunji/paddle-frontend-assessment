@@ -3,13 +3,13 @@ import axios from "axios"
 
 export interface  profiles {
   profiles: []
-  pending:boolean
+  pending:string
   loading:boolean
 }
 
 const initialState:  profiles = {
   profiles: [],
-  pending:true,
+  pending:"idle",
   loading:true
 }
 
@@ -21,20 +21,18 @@ export const fetchProfiles=createAsyncThunk("profiles/fetchProfiles",async()=>{
 export const profileSlice = createSlice({
   name: 'profiles',
   initialState,
-  reducers: {
-
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchProfiles.pending, (state, action) => {
-
+           state.pending="pening"
       })
       .addCase(fetchProfiles.fulfilled, (state, action) => {
         console.log(action.payload);
         state.profiles=action.payload
       })
       .addCase(fetchProfiles.rejected, (state, action) => {
-        
+          state.loading=false
       })
   },
 })
