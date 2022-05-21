@@ -1,5 +1,6 @@
 import React from 'react'
 import FormLogic from '../../../helpers/formLogic'
+import CustomButton from '../../../util/CustomButton'
 import InputBox from '../../../util/InputBox'
 import Label from '../../../util/Label'
 import TextInput from '../../../util/TextInput'
@@ -16,7 +17,7 @@ const Form:React.FC = () => {
         <div className="form-text my-12">
             <h1 className='text-[#ffffff] text-[25px] font-medium text-center '>Hey, we are still in the works, <br /> but you can send us a message!</h1>
         </div>
-        <form className='w-10/12 mx-auto flex items-center flex-col'>
+        <form className='w-10/12 mx-auto flex-col'>
              <div className="form-input w-full mb-4">
                  <Label 
                    className='block text-[#ffffff] my-5 text-normal text-[21px]'
@@ -52,7 +53,7 @@ const Form:React.FC = () => {
                    name={"email"}
                    placeholder='Enter your email address'
                    className='w-full rounded-[15px] p-4 indent-4'
-                   value={values.firstname}
+                   value={values.email}
                    onChange={handleChange}
                  />
              </div>
@@ -61,12 +62,18 @@ const Form:React.FC = () => {
                 label='Tell us what you need help with:'  className='block text-[#ffffff] my-5 text-normal text-[21px]'
                 />
                 <InputBox
-                    name={"firstname"}
+                    name={"topic"}
                     placeholder='Enter your First name'
                     className='w-full rounded-[15px] indent-5 pt-5 placeholder-style'
-                    value={values.firstname}
+                    value={values.topic}
                     onChange={handleTextarea}
                 />
+             </div>
+             <div className="submit flex text-left justify-start mt-9">
+                 <CustomButton
+                   className='shadow-contact-shadow bg-[#271AC1] text-[#ffffff] rounded-[20px] px-8 py-3'
+                   text='submit'
+                 />
              </div>
         </form>
     </div>
