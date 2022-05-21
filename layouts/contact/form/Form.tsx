@@ -13,11 +13,11 @@ const Form:React.FC = () => {
 
 
   return (
-    <div className='w-full h-[100%] flex items-center flex-col bg-[#0C0123]'>
+    <div className='w-full h-[100vh] flex items-center flex-col bg-[#0C0123]'>
         <div className="form-text my-12">
             <h1 className='text-[#ffffff] text-[25px] font-medium text-center '>Hey, we are still in the works, <br /> but you can send us a message!</h1>
         </div>
-        <form className='w-10/12 mx-auto flex-col'>
+        <form className='sm:w-10/12 w-full sm:px-0 px-4 mx-auto flex-col'>
              <div className="form-input w-full mb-4">
                  <Label 
                    className='block text-[#ffffff] my-5 text-normal text-[21px]'
@@ -64,7 +64,7 @@ const Form:React.FC = () => {
                 <InputBox
                     name={"topic"}
                     placeholder='Enter your First name'
-                    className='w-full rounded-[15px] indent-5 pt-5 placeholder-style'
+                    className='w-full rounded-[15px] indent-5 pt-5'
                     value={values.topic}
                     onChange={handleTextarea}
                 />
