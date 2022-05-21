@@ -1,21 +1,24 @@
 import { createSlice,createAsyncThunk } from '@reduxjs/toolkit'
 import axios from "axios"
 
-export interface  profiles {
+interface  profiles {
   profiles: []
   pending:string
   loading:boolean
 }
 
-const initialState:  profiles = {
+const initialState:profiles = {
   profiles: [],
   pending:"idle",
   loading:true
 }
 
-export const fetchProfiles=createAsyncThunk("profiles/fetchProfiles",async()=>{
+export const fetchProfiles=createAsyncThunk("profiles/fetchProfiles",async(userId: number, { getState})=>{
+
       const response=await axios(`https://api.github.com/search/repositories?q=created:>2021-08-13&sort=stars&order=desc&page=${1}`)
+
       return response.data
+
 })
 
 export const profileSlice = createSlice({
