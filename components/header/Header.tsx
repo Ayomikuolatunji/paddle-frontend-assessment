@@ -12,22 +12,26 @@ export const Header:React.FC = () => {
 
     
   return (
-    <div className={`${router.asPath==="/about"? "bg-[#1F0042]":""} `}>
-        <div className={`flex justify-between items-center w-full px-5 py-6 mx-auto sm:w-10/12 sm:px-0 sm:py-10 ${router.asPath==="/about"? "bg-[#1F0042]":""} `}>
+    <div className={`${router.asPath==="/about"? "bg-[#1F0042]": router.asPath==="/comingsoon" ? "bg-[#19073B]" : ""} `}>
+        <div className={`flex justify-between items-center w-full px-5 py-6 mx-auto sm:w-10/12 sm:px-0 sm:py-10 
+        ${router.asPath==="/about"? "bg-[#1F0042]":""} `}>
+            {/* logo */}
         <div className={`logo font-bold text-[20px] 
-        ${router.asPath==="/about" 
+        ${(router.asPath ==="/about" || router.asPath==="/comingsoon")
         ? "text-[#FFFFFF]"
-        :"text-[#000000]"}`}>
+        :"text-[#000000]"}`
+        }>
              <Link href={"/"}>
                  METRICKS
              </Link>
         </div>
+        {/* nav items */}
         <nav className="nav">
             <ul className='flex items-center'>
                 {
                     navItems.map((item,index)=>{
                         return <li className={`sm:mx-10 mx-2 opacity-[1]  
-                        ${router.asPath==="/about"
+                        ${(router.asPath==="/about" || router.asPath==="/comingsoon")
                         ? "first:text-[#FF00F7] even:text-[#FFFFFF] last:bg-[#271AC1] last:text-[#FFFFFF]"
                          :" even:text-[#FF00F7] "
                          }

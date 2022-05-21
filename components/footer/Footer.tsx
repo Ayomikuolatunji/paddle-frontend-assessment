@@ -13,24 +13,24 @@ const Footer:React.FC = () => {
 
      const icons= [
       {icon: <AiFillYoutube className={`text-4xl ml-3 ${
-        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+        router.asPath==="/blog" ? "text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon") ? "text-[#FFFFFF]" : "text-[#000000]"
       }`}/>},
       {icon:  <AiFillFacebook
         className={`text-4xl ml-4 ${
-          router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+          router.asPath==="/blog" ? "text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon") ? "text-[#FFFFFF]" : "text-[#000000]"
         }`}
       />},
       {icon: <AiFillLinkedin 
         className={`text-4xl ml-3 ${
-        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+        router.asPath==="/blog" ? "text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon") ? "text-[#FFFFFF]" : "text-[#000000]"
       }`}/>},
       {icon: <AiFillInstagram 
         className={`text-4xl ml-3 ${
-        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+        router.asPath==="/blog" ? "text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon") ? "text-[#FFFFFF]" : "text-[#000000]"
       }`}/>},
       {icon:  <AiFillTwitterSquare 
         className={`text-4xl ml-3 ${
-        router.asPath==="/blog" ? "text-[#000000]" : router.asPath==="/about" ? "text-[#FFFFFF]" : "text-[#000000]"
+        router.asPath==="/blog" ? "text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon") ? "text-[#FFFFFF]" : "text-[#000000]"
       }`}/>}
     ]
  
@@ -44,13 +44,13 @@ const Footer:React.FC = () => {
         </div>
       
         <div 
-        className={`term-service mb-6 ${router.asPath==="/blog" ? " text-[#000000]" : router.asPath==="/about" ? "text-[#ffffff]" :"text-[#000000]"}`}>
+        className={`term-service mb-6 ${router.asPath==="/blog" ? " text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon") ? "text-[#ffffff]" :"text-[#000000]"}`}>
             <span className='mr-4'>Terms of services</span>
             <span className=''>Privacy policy</span>
         </div>
         
         <div className="copyright mb-5">
-          <p  className={`term-service mb-6 ${router.asPath==="/blog" ? " text-[#000000]" : router.asPath==="/about" ? "text-[#ffffff]" :"text-[#000000]"}`}>
+          <p  className={`term-service mb-6 ${router.asPath==="/blog" ? " text-[#000000]" : (router.asPath==="/about"|| router.asPath==="/comingsoon") ? "text-[#ffffff]" :"text-[#000000]"}`}>
           Copyright {recentYear} @ Peddle Technologies. All Rights Reserved.
           </p>
         </div>

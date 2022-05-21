@@ -19,7 +19,7 @@ const Form:React.FC = () => {
   return (
     <div className='w-full h-[100vh] flex items-center flex-col bg-[#0C0123]'>
         <div className="form-text my-12">
-            <h1 className='text-[#ffffff] text-[25px] font-medium text-center '>Hey, we are still in the works, <br /> but you can send us a message!</h1>
+            <h1 className='text-[#ffffff] text-[25px] font-medium text-center sm:mt-16 mt-10'>Hey, we are still in the works, <br /> but you can send us a message!</h1>
         </div>
         <form className='sm:w-10/12 w-full sm:px-0 px-4 mx-auto flex-col' onSubmit={OnSubmit}>
              <div className="form-input w-full mb-4">
