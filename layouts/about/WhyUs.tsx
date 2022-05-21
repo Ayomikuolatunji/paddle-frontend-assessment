@@ -8,11 +8,13 @@ const WhyUs:React.FC = () => {
     useEffect(()=>{
         const template='<div class="box"></div>'
         const array=[1,2,3,4,5]
-        var container = document.querySelector("dot-group")!as HTMLDivElement;
-        console.log(container);
+        var container = document.querySelector(".dot-group")!as HTMLDivElement;
+
         for (let i = 0; i <array.length; i++) {
           const createElement=document.createElement("div")!as HTMLDivElement
-        //   container.appendChild(createElement)
+        //   will be style in styles/global.module.css
+          createElement.className="dot-child"
+          container.appendChild(createElement)
         }
     },[])
 
@@ -40,7 +42,7 @@ const WhyUs:React.FC = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="dot-group">
+                    <div className="dot-group container">
 
                     </div>
                 </div>
