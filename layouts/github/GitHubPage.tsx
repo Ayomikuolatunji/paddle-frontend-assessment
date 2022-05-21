@@ -2,14 +2,21 @@ import React, { useEffect, useState } from 'react'
 import { fetchProfiles } from '../../redux/githubSlice'
 import { useAppDispatch, useAppSelector } from '../../redux/hook'
 import Loader from '../../util/Loader'
+import GithubProfile from './GithubProfile'
 
 
-
-const GitHubPage:React.FC = () => {
+interface IUserData {
+    items:[]
+    total_count:number | string
+    incomplete_results:boolean
+}[]
+const GitHubPage = () => {
     const [pageNum,setPageNum]=useState(1)
      const dispatch=useAppDispatch()
-     const {profiles,loading}=useAppSelector(state=>state.profiles)
+     const profiles=useAppSelector(state=>state.profiles.profiles)
+     const loading=useAppSelector(state=>state.profiles.loading)
      console.log(profiles,loading);
+
 
     // setpage num
     
@@ -25,7 +32,11 @@ const GitHubPage:React.FC = () => {
              loading ? 
              <Loader/> : 
              <div>
-                <GithubProfile/>
+                 {
+                    profiles.items.map((profile:IUserData)=>{
+                        return  <GithubProfile profile={profile}/>
+                    })
+                 }
              </div>
          }
     </div>
@@ -33,3 +44,7 @@ const GitHubPage:React.FC = () => {
 }
 
 export default GitHubPage
+
+function profiles(profiles: any, loading: boolean) {
+    throw new Error('Function not implemented.')
+}

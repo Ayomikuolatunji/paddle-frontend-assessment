@@ -1,8 +1,19 @@
 import React from 'react'
 
-const GithubProfile:React.FC = () => {
+
+
+interface IUserData {
+    profile:{
+        id:number | string
+        name:string
+    }
+}
+
+
+const GithubProfile = (prop:IUserData) => {
+
   return (
-    <div>GithubProfile</div>
+    <div>GithubProfile {prop.profile.id} {prop.profile.name}</div>
   )
 }
 

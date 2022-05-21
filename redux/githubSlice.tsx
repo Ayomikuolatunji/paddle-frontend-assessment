@@ -21,6 +21,12 @@ export const fetchProfiles=createAsyncThunk("profiles/fetchProfiles",async(userI
 
 })
 
+interface IUserData {
+    items:[]
+    total_count:number | string
+    incomplete_results:boolean
+}
+
 export const profileSlice = createSlice({
   name: 'profiles',
   initialState,
