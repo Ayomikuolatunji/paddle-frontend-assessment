@@ -14,6 +14,7 @@ export default function Blog() {
 
   return (
     <>
+        {/*hero , knowMore and RecentArticle  */}
         <Hero/>
         {/* the components wrapped in the div foldder have eqaul width and they need to behave the same for proper responsiveness */}
        <div className='sm:w-10/12 mx-auto w-full sm:px-0 px-3'>
@@ -21,7 +22,7 @@ export default function Blog() {
           <BlogPost/>
           <RecentArticle/>
        </div>
-       {/* what to know more about metrics component */}
+        {/* what to know more about metrics component */}
        <KnowMore/>
        <Footer/>
     </>
