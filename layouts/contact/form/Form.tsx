@@ -13,8 +13,8 @@ const Form:React.FC = () => {
 
   return (
     <div className='w-full h-[100%] flex items-center flex-col bg-[#0C0123]'>
-        <div className="form-text my-16">
-            <h1 className='text-[#ffffff] text-[40px] font-medium text-center '>Hey, we are still in the works, <br /> but you can send us a message!</h1>
+        <div className="form-text my-12">
+            <h1 className='text-[#ffffff] text-[25px] font-medium text-center '>Hey, we are still in the works, <br /> but you can send us a message!</h1>
         </div>
         <form className='w-10/12 mx-auto flex items-center flex-col'>
              <div className="form-input w-full mb-4">
@@ -30,37 +30,40 @@ const Form:React.FC = () => {
                    onChange={handleChange}
                  />
              </div>
-             <div className="form-input w-full mb-4">
+             <div className="form-input w-full mb-3">
                  <Label 
-                   className='block text-[#ffffff] my-5 text-normal text-[21px]'
+                   className='block text-[#ffffff] my-4 text-normal text-[21px]'
                    label='Last name'
                  />
                  <TextInput 
                    name={"lastname"}
                    placeholder='Enter Your Last Name'
-                   className='w-full rounded-[15px] p-5 indent-4'
+                   className='w-full rounded-[15px] p-4 indent-4'
                    value={values.lastname}
                    onChange={handleChange}
                  />
              </div>
-             <div className="form-input w-full mb-4">
+             <div className="form-input w-full mb-3">
                  <Label 
-                   className='block text-[#ffffff] my-5 text-normal text-[21px]'
+                   className='block text-[#ffffff] my-4 text-normal text-[21px]'
                    label='Email address'
                  />
                  <TextInput 
                    name={"email"}
                    placeholder='Enter your email address'
-                   className='w-full rounded-[15px] p-5 indent-4'
+                   className='w-full rounded-[15px] p-4 indent-4'
                    value={values.firstname}
                    onChange={handleChange}
                  />
              </div>
-             <div className="form-input w-full mb-4">
+             <div className="form-input w-full mb-3">
+                <Label 
+                label='Tell us what you need help with:'  className='block text-[#ffffff] my-5 text-normal text-[21px]'
+                />
                 <InputBox
                     name={"firstname"}
                     placeholder='Enter your First name'
-                    className='w-full rounded-[15px] p-5 indent-4'
+                    className='w-full rounded-[15px]  indent-4'
                     value={values.firstname}
                     onChange={handleTextarea}
                 />

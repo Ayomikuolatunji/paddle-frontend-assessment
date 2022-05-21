@@ -15,6 +15,7 @@ const {TextArea}=Input
 function TextInput(prop:prop) {
   return (
     <Input.TextArea
+      rows={5}
       name={prop.name}
       placeholder={prop.placeholder} 
       className={prop.className}
