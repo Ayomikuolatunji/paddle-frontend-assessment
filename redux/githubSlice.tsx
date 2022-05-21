@@ -26,10 +26,12 @@ export const profileSlice = createSlice({
     builder
       .addCase(fetchProfiles.pending, (state, action) => {
            state.pending="pening"
+           state.loading=true
       })
       .addCase(fetchProfiles.fulfilled, (state, action) => {
-        console.log(action.payload);
         state.profiles=action.payload
+        state.pending="idle"
+        state.loading=false
       })
       .addCase(fetchProfiles.rejected, (state, action) => {
           state.loading=false
