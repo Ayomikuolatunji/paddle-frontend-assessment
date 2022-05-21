@@ -63,7 +63,7 @@ const Form:React.FC = () => {
                 <InputBox
                     name={"firstname"}
                     placeholder='Enter your First name'
-                    className='w-full rounded-[15px]  indent-4'
+                    className='w-full rounded-[15px] indent-5 pt-5 placeholder-style'
                     value={values.firstname}
                     onChange={handleTextarea}
                 />
