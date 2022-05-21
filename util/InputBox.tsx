@@ -1,22 +1,27 @@
 import React, { FormEvent } from 'react'
 import { Input } from 'antd';
 
-const { TextArea } = Input;
-
 interface prop{
+  placeholder:string
+  className:string
   value:string
   name:string
-  onChange:(e:FormEvent<HTMLInputElement>)=>void
+  onChange:(e:FormEvent<HTMLTextAreaElement>)=>void
 }
 
-const InputBox = (prop:prop) => {
-  return  (
-    <TextArea rows={4} 
-    value={prop.value}
-    name={prop.name}
-    onChange={(e)=>prop.onChange(e)}
- />
+
+const {TextArea}=Input
+
+function TextInput(prop:prop) {
+  return (
+    <Input.TextArea
+      name={prop.name}
+      placeholder={prop.placeholder} 
+      className={prop.className}
+      value={prop.value}
+      onChange={(e)=>prop.onChange(e)}
+    />
   )
 }
 
-export default InputBox
+export default TextInput

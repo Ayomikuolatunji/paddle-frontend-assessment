@@ -44,9 +44,9 @@ const Form:React.FC = () => {
                  />
              </div>
              <div className="text-area">
-                <InputBox
+                {/* <InputBox
                 
-                />
+                /> */}
              </div>
         </form>
     </div>
