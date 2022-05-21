@@ -5,19 +5,19 @@ const WhyUs:React.FC = () => {
 
 
     
-    // useEffect(()=>{
-    //  let container = document.querySelector(".dot-group")! as HTMLDivElement;
-    //   function Values() {
-    //     Array.from(Array(81).keys()).map((_, i)=>{
-    //         console.log(i);
-    //         const createElement=document.createElement("div")! as HTMLDivElement
-    //         //   will be style in styles.css
-    //           createElement.className="dot-child"
-    //           container.appendChild(createElement)
-    //        })
-    //   }
-    //   Values()
-    // },[])
+    useEffect(()=>{
+     let container = document.querySelector(".dot-group")! as HTMLDivElement;
+      function Values() {
+        Array.from(Array(81).keys()).map((_, i)=>{
+            console.log(i);
+            const createElement=document.createElement("div")! as HTMLDivElement
+            //   will be style in styles.css
+              createElement.className="dot-child"
+              container.appendChild(createElement)
+           })
+      }
+      Values()
+    },[])
 
 
   return (
@@ -49,10 +49,10 @@ const WhyUs:React.FC = () => {
                 </div>
                 {/* second grid on the right side */}
                 <div className="second-grid relative w-full">
-                    <div className="lefts sm:w-[50%] w-full h-[inherent] flex items-center justify-center relative z-10">
+                    {/* <div className="lefts sm:w-[50%] w-full h-[inherent] flex items-center justify-center relative z-10">
                         <div className='bg-blue-200 h-[280px] w-[250px] rounded-md shadow-2xl opacity-[1] z-[999] absolute top-[30%] mt-24 sm:mt-12 sm:right-[0] backdrop-blur-m backdrop-filter-none  backdrop-brightness-150 ]'>
                         </div>
-                    </div>               
+                    </div>                */}
                     <div className="bg-gradient-to-b from-[#213F72] to-[#1D0040]  bottom-0 absolute top-0 left-0 right-0 flex justify-start sm:h-[395px] h-[500px] flex-col p-3">
                            <div className="readmore flex items-center relative mt-9 z-[999]">
                                 <span className="text absolute top-0 left-0 -mt-5 opacity-[1] sm:-mt-7 text-[#ffffff] text-[18px] font-medium sm:text-[25px]">
