@@ -9,11 +9,9 @@ import TextInput from '../../../util/TextInput'
 const Form:React.FC = () => {
     const {values,handleChange,handleTextarea}=FormLogic()
   
-    const OnSubmit=useCallback(()=>{
-      (e:React.FormEvent)=>{
+    const OnSubmit=useCallback((e:React.FormEvent)=>{
         e.preventDefault()
-        console.log(values);
-      }
+      //  console.log(values.email, values.firstname, values.lastname, values.topic);
     },[])
    
 
