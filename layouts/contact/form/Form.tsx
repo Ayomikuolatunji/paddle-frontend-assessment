@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { ReactEventHandler, useCallback } from 'react'
 import FormLogic from '../../../helpers/formLogic'
 import CustomButton from '../../../util/CustomButton'
 import InputBox from '../../../util/InputBox'
 import Label from '../../../util/Label'
+import SubmitBtn from '../../../util/SubmitBtn'
 import TextInput from '../../../util/TextInput'
 
 const Form:React.FC = () => {
     const {values,handleChange,handleTextarea}=FormLogic()
   
-
+    const OnSubmit=useCallback(()=>{
+      (e:React.FormEvent)=>{
+        e.preventDefault()
+        console.log(values);
+      }
+    },[])
    
 
 
@@ -17,7 +23,7 @@ const Form:React.FC = () => {
         <div className="form-text my-12">
             <h1 className='text-[#ffffff] text-[25px] font-medium text-center '>Hey, we are still in the works, <br /> but you can send us a message!</h1>
         </div>
-        <form className='sm:w-10/12 w-full sm:px-0 px-4 mx-auto flex-col'>
+        <form className='sm:w-10/12 w-full sm:px-0 px-4 mx-auto flex-col' onSubmit={OnSubmit}>
              <div className="form-input w-full mb-4">
                  <Label 
                    className='block text-[#ffffff] my-5 text-normal text-[21px]'
@@ -70,9 +76,10 @@ const Form:React.FC = () => {
                 />
              </div>
              <div className="submit flex text-left justify-start mt-9">
-                 <CustomButton
-                   className='shadow-contact-shadow bg-[#271AC1] text-[#ffffff] rounded-[20px] px-8 py-3'
-                   text='submit'
+                 <SubmitBtn
+                   type='submit'
+                   className='shadow-contact-shadow bg-[#271AC1] text-[#ffffff] rounded-[20px] px-10 py-3 uppercase'
+                   text='Send now'
                  />
              </div>
         </form>
