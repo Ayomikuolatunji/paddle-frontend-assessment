@@ -11,7 +11,7 @@ const Form:React.FC = () => {
 
 
   return (
-    <div>
+    <div className='w-full flex justify-center items-center flex-col bg-red-100'>
         <div className="form-text">
             <h1>Hey, we are still in the works, but you can send us a message!</h1>
         </div>
@@ -45,7 +45,11 @@ const Form:React.FC = () => {
              </div>
              <div className="text-area">
                 {/* <InputBox
-                
+                    name={"firstname"}
+                    placeholder='Enter your First name'
+                    className=''
+                    value={values.firstname}
+                    onChange={handleChange}
                 /> */}
              </div>
         </form>

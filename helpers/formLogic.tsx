@@ -8,6 +8,13 @@ interface inputInterface {
     email:string
     topic:string
 }
+type InputProps = ({ // The discriminated union
+    type?: "text";
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+} | {
+    type: "textarea";
+    onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+})
 
 
 const FormLogic=()=>{
@@ -19,8 +26,8 @@ const FormLogic=()=>{
     })
      
 
-    const handleChange=(e:React.FormEvent<HTMLInputElement>)=>{
-        const {name, value} = e.currentTarget;
+    const handleChange=(event:React.FormEvent<HTMLInputElement>)=>{
+        const {name, value} = event.currentTarget;
         setValues({...values, [name]:value})
     }
 
