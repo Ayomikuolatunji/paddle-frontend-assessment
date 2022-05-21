@@ -49,11 +49,11 @@ const WhyUs:React.FC = () => {
                 </div>
                 {/* second grid on the right side */}
                 <div className="second-grid relative w-full">
-                    <div className="lefts sm:w-[50%] w-full h-[inherent] flex items-center justify-center relative z-[2]">
-                        <div className='bg-blue-100 h-[330px] w-[260px] rounded-md shadow-2xl opacity-[1] z-[999] absolute top-[20%] sm:right-[12%]'>
+                    <div className="lefts sm:w-[50%] w-full h-[inherent] flex items-center justify-center relative z-10">
+                        <div className='bg-blue-200 h-[330px] w-[260px] rounded-md shadow-2xl opacity-[1] z-[999] absolute top-[30%] mt-24 sm:mt-12 sm:right-[0] backdrop-blur-m backdrop-filter-none  backdrop-brightness-150 ]'>
                         </div>
                     </div>               
-                    <div className="bg-gradient-to-b from-[#213F72] to-[#1D0040]  bottom-0 absolute top-0 left-0 right-0 flex justify-start sm:h-[395px] h-[500px] flex-col p-3 backdrop-blur-m md:backdrop-filter-16  backdrop-brightness-150 ">
+                    <div className="bg-gradient-to-b from-[#213F72] to-[#1D0040]  bottom-0 absolute top-0 left-0 right-0 flex justify-start sm:h-[395px] h-[500px] flex-col p-3">
                            <div className="readmore flex items-center relative mt-12 z-[999]">
                                 <span className="text absolute top-0 left-0 -mt-5 opacity-[1] sm:-mt-7 text-[#ffffff] text-[18px] font-medium sm:text-[25px]">
                                     02
@@ -62,14 +62,14 @@ const WhyUs:React.FC = () => {
                                 <p className='text-[#FFFFFF] ml-3 cursor-pointer text-xl uppercase text-medium'>Why us
                                 </p>
                             </div>
-                            <div className="text-content">
+                            <div className="text-content z-[999]">
                                 <div className="content-wrapper  w-full">
                                     <p className='text-[22px] text-[#FFFFFF] mt-10 '>
                                     Leveraging the best technology, we have developed an all-in-one affiliate marketing tracking software, a genius tool to help you track, automate and optimize your influencer campaigns, all from one dashboard.
                                     </p>
                                 </div>
                             </div>
-                            <div className="text-content">
+                            <div className="text-content z-[999]">
                                 <div className="content-wrapper  w-full">
                                     <p className='text-[22px] text-[#FFFFFF] mt-10 '>
                                     Our team of experts are constantly brainstorming, testing and developing new solutions with only one thing in mind - your business growth. Your success is our success and by giving you the tools you need to scale, we grow as well.
