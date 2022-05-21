@@ -1,6 +1,8 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import { Provider } from 'react-redux'
 import HeaderWrapper from '../layouts/header-wrapper/HeaderWrapper'
+import { store } from '../redux/store'
 
 
 function MyApp({ Component, pageProps, ...appProps }: AppProps) {
@@ -13,7 +15,9 @@ function MyApp({ Component, pageProps, ...appProps }: AppProps) {
 
   return (
     <HeaderWrapper>
-      <Component {...pageProps} />
+       <Provider store={store}>
+         <Component {...pageProps} />
+       </Provider>
     </HeaderWrapper>
   )
 }

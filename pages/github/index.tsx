@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
-import Contact from '../../layouts/contact/Contact'
+import GitHubPage from '../../layouts/github/GitHubPage'
 
 
 
 
 const index: NextPage = () => {
-  return <Contact/>
+  return <GitHubPage/>
 }
 
 export default index
