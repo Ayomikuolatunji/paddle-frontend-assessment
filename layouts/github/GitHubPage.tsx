@@ -19,7 +19,7 @@ const GitHubPage = () => {
      const dispatch=useAppDispatch()
      const profiles=useAppSelector(state=>state.profiles.profiles)
      const loading=useAppSelector(state=>state.profiles.loading)
-     console.log(profiles,loading);
+     console.log(profiles);
 
 
     // setpage num
@@ -37,8 +37,8 @@ const GitHubPage = () => {
              <Loader/> : 
              <div>
                  {
-                    profiles.items.map((profile:IUserData)=>{
-                        return  <GithubProfile profile={profile}/>
+                    profiles.map((profile:IUserData)=>{
+                        return  <GithubProfile profile={profile} key={profile.id}/>
                     })
                  }
              </div>

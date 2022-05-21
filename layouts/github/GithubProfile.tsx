@@ -13,7 +13,9 @@ interface IUserData {
 const GithubProfile = (prop:IUserData) => {
 
   return (
-    <div>GithubProfile {prop.profile.id} {prop.profile.name}</div>
+    <div key={prop.profile.id} className="w-[75%] shadow-md mx-auto">
+
+    </div>
   )
 }
 
