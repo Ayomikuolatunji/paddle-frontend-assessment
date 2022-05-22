@@ -14,13 +14,13 @@ export const Header:React.FC = () => {
   return (
     <div className={`
     ${router.asPath==="/about"? "bg-[#1F0042]": (router.asPath==="/comingsoon" || router.asPath==="/") ? "bg-[#19073B]" : ""} `}>
-        <div className={`flex justify-between items-center w-full px-5 py-6 mx-auto sm:w-10/12 sm:px-0 sm:py-10 
+        <div className={`flex justify-between items-center w-full  py-6 mx-auto sm:w-10/12 sm:px-0 sm:py-10 
         ${router.asPath==="/about"? "bg-[#1F0042]":""} `}>
             {/* logo */}
         <div className={`logo font-bold text-[20px] 
         ${(router.asPath ==="/about" || router.asPath==="/comingsoon" || router.asPath==="/")
         ? "text-[#FFFFFF]"
-        :"text-[#000000]"} text-[20px]`
+        :"text-[#000000]"} text-[20px] sm:pl-0 pl-2`
         }>
              <Link href={"/"}>
                  METRICKS
@@ -31,7 +31,7 @@ export const Header:React.FC = () => {
             <ul className='flex items-center'>
                 {
                     navItems.map((item,index)=>{
-                        return <li className={`sm:mx-10 mx-1 opacity-[1]  
+                        return <li className={`sm:mx-10 mx-2 opacity-[1]  
                         ${(router.asPath==="/about" 
                         || router.asPath==="/comingsoon" 
                         || router.asPath==="/")

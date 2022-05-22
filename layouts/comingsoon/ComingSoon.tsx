@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../../components/footer/Footer'
 import CountDown from './CountDown'
-import HeroText from './HeroText'
+import HeroText from './Hero.ComimgSoon'
 import Waitlist from './Waitlist'
 
 const ComingSoon:React.FC = () => {

@@ -30,7 +30,7 @@ const Footer:React.FC = () => {
       }`}/>},
       {icon:  <AiFillTwitterSquare 
         className={`text-4xl ml-3 ${
-        router.asPath==="/blog" ? "text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon") ? "text-[#FFFFFF]" : "text-[#000000]"
+        router.asPath==="/blog" ? "text-[#000000]" : (router.asPath==="/about" || router.asPath==="/comingsoon" || router.asPath==="/") ? "text-[#FFFFFF]" : "text-[#000000]"
       }`}/>}
     ]
  
