@@ -22,7 +22,7 @@ interface IUserData {
 const GithubProfile = (prop:IUserData) => {
 
   return (
-    <div key={prop.profile.id} className="w-[50%] my-3 p-2 shadow-md mx-auto flex  items-center">
+    <div key={prop.profile.id} className="sm:w-[50%] w-[90%] my-3 p-2 shadow-md mx-auto flex items-center">
          <div className="image w-[270px] h-[150px] relative">
              <Image 
              src={prop.profile.owner.avatar_url} 
