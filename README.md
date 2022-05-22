@@ -23,7 +23,7 @@ This web app is built with Reactjs(Nextjs framework) with typescript,ant design 
 
 4, Tailwindcss: The entire app was styled with tailwindcss(A utility-first CSS framework). Visit tailwindcss site to see more https://tailwindcss.com/
 
-5, Redux Toolkit: Data state management was implemented with redux toolkit which helps us to handle data fetching and then dispatch it to the part of the app that needs it without writing multiple react hook. It also helps to avoid prop drilling when passing data from one component to another. You can see more about redux https://redux-toolkit.js.org/
+5, Redux Toolkit: Data state management was implemented with redux toolkit which helps us to handle data fetching and then dispatch it to the part of the app that needs it without writing multiple react hooks state. It also helps to avoid prop drilling when passing data from one component to another. You can see more about redux https://redux-toolkit.js.org/
 
 **Step by step guide on how to run the application.**
 
