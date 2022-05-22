@@ -3,9 +3,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ##
 **SYSTEM REQUIREMENTS**
-Nodejs:>=16+
-Npm: version greater than v6
-Git:  2.10.  version or higher  
+Nodejs:>=16+.
+Npm: version greater than v6.
+Git:  2.10.  version or higher.  
 
 Make sure node,npm and git are installed in your pc before you clone this project.
 
