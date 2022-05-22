@@ -35,7 +35,7 @@ export const Header:React.FC = () => {
                         ${(router.asPath==="/about" 
                         || router.asPath==="/comingsoon" 
                         || router.asPath==="/")
-                        ? "first:text-[#FF00F7] even:text-[#FFFFFF]  last:bg-[#271AC1] last:text-[#FFFFFF]"
+                        ? "first:text-[#FF00F7] even:text-[#FFFFFF]  last:bg-[#271AC1] odd:text-[#ffffff] last:text-[#FFFFFF]"
                          :" even:text-[#FF00F7]"
                          }
                         font-[Poppins] text-[13px] font-bold 
