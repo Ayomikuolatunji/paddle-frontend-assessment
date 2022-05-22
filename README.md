@@ -44,7 +44,8 @@ Done? good, now run **npm run dev** to see the project on your browser.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-What you would like to improve in this application if it was not an assessment.(optional).
+**What you would like to improve in this application if it was not an assessment.(optional).**
+
 1, I will make the header more responsive with an hamburger on mobile view
 <br>
 2, I will also make more responsive for tablet users because it more responseive on device which are 770px greated and 440px lower. 
@@ -52,6 +53,10 @@ What you would like to improve in this application if it was not an assessment.(
 3, I style the github page to look exactly as it is on github(improving the user experience).
 <br>
 4,I will implement this (Implement data pagination with infinite scroll.(optional)
+<br>
+5, I will build a backend API's that will store user inputs they submitted in the  /contact page, crud system that will allow blog post to be created, deleted, fetch blog posts,modify blog post, etc. 
+
+
 
 
 
