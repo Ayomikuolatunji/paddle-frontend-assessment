@@ -1,34 +1,56 @@
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+##
+**SYSTEM REQUIREMENTS**
+Nodejs:>=16+
+Npm: version greater than v6
+Git:  2.10.  version or higher  
 
-First, run the development server:
+Make sure node,npm and git are installed in your pc before you clone this project.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## About Project
+This web app is built with Reactjs(Nextjs framework) with typescript,ant design and tailwindcss.
+
+##
+**Libraries and dependecies you used in implementing the application**
+
+1, Axios: I make use axios to make http request that fetch the github profiles data. Axios site to know more https://axios-http.com/docs/intro
+
+2, React Icons: All the icons I use throughout the building process comes from that package.React icons main website https://react-icons.github.io/react-icons/
+
+3, Ant Design: Antd provide reuseable component such as button, input text, textarea, .etc. See more about antd https://ant.design/
+
+4, Tailwindcss: The entire app was styled with tailwindcss(A utility-first CSS framework). Visit tailwindcss site to see more https://tailwindcss.com/
+
+5, Redux Toolkit: Data state management was implemented with redux toolkit which helps us to handle data fetching and then dispatch it to the part of the app that needs it without writing multiple react hook. It also helps to avoid prop drilling when passing data from one component to another. You can see more about redux https://redux-toolkit.js.org/
+
+**Step by step guide on how to run the application.**
+
+First clone the the copy of the https://github.com/Ayomikuolatunji/paddle-frontend-assessment.git
+
+Move to desktop folder on your pc terminal or anywhere you want: cd Desktop
+
+Run the command git clone  https://github.com/Ayomikuolatunji/paddle-frontend-assessment.git 
+After you successfully clone the project move to the project folder on your IDE or terminal : cd paddle-frontend-assessment
+
+So far we have the clone of the  project on our pc.
+
+Now run **npm install ** in the clone folder root directory
+
+Done? good, now run **npm run dev** to see the project on your browser. 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+What you would like to improve in this application if it was not an assessment.(optional).
+1, I will make the header more responsive with an hamburger on mobile view
+2, I will also make more responsive for tablet users because it more responseive on device which are 770px greated and 440px lower. 
+3, I style the github page to look exactly as it is on github(improving the user experience).
+4,I will implement this (Implement data pagination with infinite scroll.(optional)
+
+
+
+
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
