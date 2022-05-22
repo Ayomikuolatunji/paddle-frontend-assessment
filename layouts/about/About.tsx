@@ -5,6 +5,11 @@ import Hero from './Hero.About'
 import MetricText from './MetricText'
 import WhyUs from './WhyUs'
 
+
+
+
+// about us component used in pages/about/index.tsx
+
 const About:React.FC = () => {
 
     

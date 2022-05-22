@@ -3,7 +3,7 @@ import { articleItems } from '../../helpers/blogItems'
 
 const RecentArticle:React.FC = () => {
 
-
+//    article grid 
 
 
   return (
@@ -20,13 +20,16 @@ const RecentArticle:React.FC = () => {
                       <div className="date my-3 ">
                           <p className='text-gray-500 tracking-[0.42px] opacity-[0.53]'>{article.date}{article.feature}</p>
                       </div>
+                      {/* articel title */}
                       <h1 className="text-[#1E232C] font-[600] 
                       sm:text-[26px] leading-[1.8] capitalize opacity-[1] font-[Poppins] mt-3 text-[23px]">
                           {article.title}
                       </h1>
+                      {/* article post */}
                       <p className="py-3 text-[#1E232C] text-[18px] font-[300]">
                           {article.post}
                       </p>
+                      {/* button to read more */}
                       <div className="readmore flex mt-3 items-center">
                           <span className='bg-[#FF00F7] h-[2px] w-[87px] block'></span>
                           {/* link will replace it the p tag in a real life scenario */}
@@ -36,6 +39,7 @@ const RecentArticle:React.FC = () => {
                   })
               }
          </div>
+         {/* Button to load more posts */}
          <div className="btn my-10 text-center">
             <button className='bg-[#7C0FD5] shadow-post-btn-shadow opacity-[1] text-[#fff] px-12 py-4 uppercase rounded-[50px] text-[21px]'>
                 load more
