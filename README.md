@@ -17,7 +17,7 @@ This web app is built with Reactjs(Nextjs framework) with typescript,ant design 
 
 1, Axios: I make use axios to make http request that fetch the github profiles data. Axios site to know more https://axios-http.com/docs/intro
 
-2, React Icons: All the icons I use throughout the building process comes from that package.React icons main website https://react-icons.github.io/react-icons/
+2, React Icons: All the icons I use throughout the building process comes from react icons package.React icons main website https://react-icons.github.io/react-icons/
 
 3, Ant Design: Antd provide reuseable component such as button, input text, textarea, .etc. See more about antd https://ant.design/
 
