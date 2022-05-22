@@ -10,7 +10,6 @@ const GitHubPage = () => {
      const dispatch=useAppDispatch()
      const profiles=useAppSelector(state=>state.profiles.profiles)
      const loading=useAppSelector(state=>state.profiles.loading)
-     console.log(profiles);
 
 
     // setpage num
@@ -26,10 +25,10 @@ const GitHubPage = () => {
           setPageNum((prevNum)=>prevNum+1)
       }
     }
-   })
+   },[])
 
   return (
-    <div>
+    <div className='h-[100vh] flex justify-center'>
          {
              loading ? 
              <Loader/> : 
@@ -46,7 +45,3 @@ const GitHubPage = () => {
 }
 
 export default GitHubPage
-
-function profiles(profiles: any, loading: boolean) {
-    throw new Error('Function not implemented.')
-}
