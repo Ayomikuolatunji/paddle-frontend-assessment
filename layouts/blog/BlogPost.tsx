@@ -18,8 +18,8 @@ const BlogPost:React.FC=()=>{
                         className='shadow-blog-post-image-shadow'
                         />
                       </div>
-                      <div className="date">
-
+                      <div className="date my-3 ">
+                         <p className='text-gray-500 tracking-[0.42px] opacity-[0.53]'>{blog.date}{blog.feature}</p>
                       </div>
                       <h1 className="text-[#1E232C] font-[600] 
                       sm:text-[26px] leading-[1.8] capitalize opacity-[1] font-[Poppins] mt-3 text-[23px]">

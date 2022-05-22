@@ -1,7 +1,11 @@
 import React from 'react'
 import { articleItems } from '../../helpers/blogItems'
 
-const RecentArticle = () => {
+const RecentArticle:React.FC = () => {
+
+
+
+
   return (
     <div className='mt-[100px]'>
          <div className="intro sm:w-[50%] w-full">
@@ -13,8 +17,8 @@ const RecentArticle = () => {
               {
                   articleItems.map((article,index)=>{
                       return <div key={index} className="h-[auto] p-6 shadow-blog-post-shadow">
-                      <div className="date">
-
+                      <div className="date my-3 ">
+                          <p className='text-gray-500 tracking-[0.42px] opacity-[0.53]'>{article.date}{article.feature}</p>
                       </div>
                       <h1 className="text-[#1E232C] font-[600] 
                       sm:text-[26px] leading-[1.8] capitalize opacity-[1] font-[Poppins] mt-3 text-[23px]">

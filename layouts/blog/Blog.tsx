@@ -1,11 +1,13 @@
 import React from 'react'
 import Footer from '../../components/footer/Footer'
+import KnowMore from '../../components/know-more/KnowMore'
 import BlogPost from './BlogPost'
 import Hero from './Hero.Blog'
-import KnowMore from '../../components/know-more/KnowMore'
 import RecentArticle from './RecentArticle'
 import Search from './Search'
 
+
+// blog components exported to /pages/index.tsx
 export default function Blog() {
 
 
