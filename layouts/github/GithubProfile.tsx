@@ -20,12 +20,11 @@ interface IUserData {
 
 const GithubProfile = (prop:IUserData) => {
 
-    console.log(prop)
 
   return (
-    <div key={prop.profile.id} className="sm:w-[50%] w-[90%] my-3 p-2 shadow-md mx-auto flex items-center">
+    <div key={prop.profile.id} className="sm:w-[55%] w-[90%] my-3 p-2 shadow-md mx-auto flex items-center mt-11">
          <div className="image w-[30%]">
-            <div className='relative sm:w-[150px] lg:w-[250px] md:w-[150px] w-[120px] h-[160px]'>
+            <div className='relative sm:w-[150px]  md:w-[150px] w-[120px] h-[160px]'>
               <Image 
               src={prop.profile.owner.avatar_url} 
               alt={prop.profile.name}  
@@ -35,8 +34,8 @@ const GithubProfile = (prop:IUserData) => {
             </div>
          </div>
          <div className="details ml-3 w-[70%]">
-             <h1 className='mb-3'>{prop.profile.name}</h1>
-             <p className='mb-3'>
+             <h1 className='mb-3 font-medium'>{prop.profile.name}</h1>
+             <p className='mb-3 font-normal text-gray-400'>
                {prop.profile.description}
              </p>
              <div className="repo-detail flex items-center leading-normal">

@@ -10,7 +10,7 @@ const GitHubPage = () => {
      const dispatch=useAppDispatch()
      const profiles=useAppSelector(state=>state.profiles.profiles)
      const loading=useAppSelector(state=>state.profiles.loading)
-
+     console.log(profiles);
 
     // setpage num
     
@@ -18,14 +18,17 @@ const GitHubPage = () => {
     useEffect(()=>{
       dispatch(fetchProfiles(pageNum))
     },[pageNum])
-
-   useEffect(()=>{
-    window.onscroll = function (){
-      if(window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
-          setPageNum((prevNum)=>prevNum+1)
-      }
-    }
-   },[])
+    //if user is at the end of the page add 1 to the page number
+  useEffect(()=>{  
+  // Checking if the page has reached the bottom
+  window.onscroll = function (){
+     if(window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
+        setPageNum(pageNum + 1);
+        // fetch new data from redux store
+        dispatch(fetchProfiles(pageNum))
+     }
+  }
+  })
 
   return (
     <div className='h-[100vh] flex justify-center'>
