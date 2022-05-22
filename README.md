@@ -19,7 +19,7 @@ This web app is built with Reactjs(Nextjs framework) with typescript,ant design 
 
 2, React Icons: All the icons I use throughout the building process comes from react icons package.React icons main website https://react-icons.github.io/react-icons/
 
-3, Ant Design: Antd provide reuseable component such as button, input text, textarea, .etc. See more about antd https://ant.design/
+3, Ant Design: Antd provide reuseable components such as button, input text, textarea, .etc. See more about antd https://ant.design/
 
 4, Tailwindcss: The entire app was styled with tailwindcss(A utility-first CSS framework). Visit tailwindcss site to see more https://tailwindcss.com/
 
