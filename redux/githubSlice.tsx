@@ -13,6 +13,8 @@ const initialState:profiles = {
   loading:true
 }
 
+// createAsyncThunk is used to fetch github profiles 
+
 export const fetchProfiles=createAsyncThunk("profiles/fetchProfiles",async(id: number, { getState})=>{
 
     const response=await axios(`https://api.github.com/search/repositories?q=created:>2021-08-13&q=stars:>=1&sort=stars&order=desc&page=${id}`)
@@ -43,6 +45,5 @@ export const profileSlice = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
-
+// Exported the profileSlice.reducer ./store 
 export default profileSlice.reducer
